@@ -1,10 +1,8 @@
 package org.example;
 
-import org.example.Models.Playlist;
+import org.example.Service.Service;
+import org.example.domain.Playlist;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
 import java.util.TreeMap;
 
 public class Main {
@@ -43,7 +41,7 @@ public class Main {
         Playlist favouritePlaylist = new Playlist(favourite);
 
 
-        Playlist result = new Playlist();
+        Service result = new Service();
         result.findByAmountListen(russianPlaylist.getPlaylist(),popPlaylist.getPlaylist(),favouritePlaylist.getPlaylist());
 
 
